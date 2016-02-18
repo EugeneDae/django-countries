@@ -27,8 +27,8 @@ class LazyChoicesMixin(object):
         When it's time to get the choices, if it was a lazy then figure it out
         now and memoize the result.
         """
-        if isinstance(self._choices, Promise):
-            self._choices = list(self._choices)
+        # if isinstance(self._choices, Promise):
+        #    self._choices = list(self._choices)
         return self._choices
 
     @choices.setter
